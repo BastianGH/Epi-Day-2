@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingPedia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">index.html</a></li>
+                <li><a href="php.html">php.html</a></li>
+                <li><a href="sql.html">sql.html</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <p>Im human, Im living by eating, breathing and drinking</p>
+        <figure>
+            <blockquote>
+                <cite>
+                    Peace is a lie, there is only passion.  <br>
+                    Through passion, I gain strength.<br>
+                    Through strength, I gain power.<br>
+                    Through power, I gain victory.<br>
+                    Through victory, my chains are broken.<br>
+                    The Force shall free me.<br>
+                </cite>
+                <figcaption>
+                    <p><cite>Sith Code</cite></p>
+                </figcaption>
+            </blockquote>
+        </figure>
+    </aside>
+    <main>        
+        <article>
+            <h2>Description</h2>
+            <p>
+                SQL (sigle de Structured Query Language, en français langage de requête structurée) est un langage informatique normalisé servant à exploiter des bases de données relationnelles. La partie langage de manipulation des données de SQL permet de rechercher, d'ajouter, de modifier ou de supprimer des données dans les bases de données relationnelles. 
+            </p>
+        </article>
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Course Planning</th>
+                    </tr>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>Grade obtained</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SQL 101</td>
+                        <td>A quick introduction to the SQL language</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>SQL join</td>
+                        <td>Discovery of JOIN to combine rows from multiple tables</td>
+                        <td>13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h2>Commentaires</h2>
+            Le langage SQL s'utilise principalement de trois manières : </br>
+            <ul>
+                <li>un programme écrit dans un langage de programmation donné utilise l'interface de programmation du SGBD pour lui transmettre des instructions en langage SQL. Ces programmes utilisent des composants logiciels tels que ODBC ou JDBC. Cette technique est utilisée par l'invite de commande qui permet à un administrateur d'effectuer des opérations sur les bases de données, opérations qu'il décrit en SQL ;</li>
+                <li>technique dite embedded SQL : des instructions en langage SQL sont incorporées dans le code source d'un programme écrit dans un autre langage</li>
+                <li>technique des procédures stockées : des fonctions écrites dans un langage procédural propre à chaque SGBD (PL/SQL pour Oracle, SQL/PSM pour MySQL ...) sont enregistrées dans la base de données en vue d'être exécutées par le SGBD. Cette technique est aussi utilisée pour les triggers - procédures déclenchées automatiquement sur modification du contenu de la base de données.</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Exemples</h2>
+            <ul>
+                <li>Recherche</li>
+                <p>
+                    SELECT nom, service</br>
+                FROM   employe</br>
+                WHERE  statut = 'stagiaire'</br>
+                ORDER  BY nom;
+                </p>
+                <li>Procédure  stockée </li>
+                <p>
+                    DECLARE N INTEGER;</br>
+                SET N = 1;</br>
+                FOR C </br>
+                AS C_USR_MISE_A_JOUR </br>
+                   CURSOR FOR </br>
+                      SELECT USR_ID, USR_NOM</br>
+                      FROM   T_UTILISATEUR_USR</br>
+                      ORDER  BY USR_ID</br>
+                   FOR UPDATE OF USR_NOM</br>
+                DO</br>
+                   IF MOD(N, 2) = 0</br>
+                   THEN</br>
+                      UPDATE T_UTILISATEUR_USR</br>
+               ...
+                </p>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <address>
+            Nom : PUSSEY</br>
+            Prénom : Bastian</br>
+            Adresse : 3 Rue de la lawakbar</br>
+            Tél : <a href="tel:0606060606">0606060606</a>
+        </address>
+          
+    </footer>
+</body>
+</html>

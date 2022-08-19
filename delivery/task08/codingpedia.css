@@ -1,0 +1,61 @@
+.box {
+    border: black  solid 2px;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+body {
+    background-color: grey;
+}
+.templateflex {
+    display: flex;
+}
+main {
+    flex-basis: 80%;
+}
+aside {
+    flex-basis: 17%;
+}
+header {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+header h1 {
+    grid-row: 1;
+}
+header nav {
+    grid-row: 5;
+}
+.moving_square{
+    background-color: red;
+    width:100px;
+    height:100px;
+    animation: 5s linear  turningaround 0s 5;
+}  
+@keyframes turningaround {
+    from {
+        top: 0px;
+    }
+    25% , 50% {
+        margin-left: 0px;
+        margin-top: 300px;
+        background-color: green;
+    }
+    50% , 75% {
+        margin-top: 300px;
+        margin-left: 300px;
+        background-color: blue;
+    }
+    75% , 100% {
+        margin-top: 0px;
+        margin-left: 300px;
+        background-color: yellow;
+    }
+    to {
+        margin-top: 0px;
+        margin-left: 0px;
+        background-color: red;
+    }
+}
+  

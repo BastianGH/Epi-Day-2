@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingPedia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">index.html</a></li>
+                <li><a href="php.html">php.html</a></li>
+                <li><a href="sql.html">sql.html</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <p>Im human, Im living by eating, breathing and drinking</p>
+        <figure>
+            <blockquote>
+                <cite>
+                    Peace is a lie, there is only passion.  <br>
+                    Through passion, I gain strength.<br>
+                    Through strength, I gain power.<br>
+                    Through power, I gain victory.<br>
+                    Through victory, my chains are broken.<br>
+                    The Force shall free me.<br>
+                </cite>
+                <figcaption>
+                    <p><cite>Sith Code</cite></p>
+                </figcaption>
+            </blockquote>
+        </figure>
+    </aside>
+    <main>
+        <article>
+            <h2>Description</h2>
+            <p>
+                PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (sigle auto-référentiel), est un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP32, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet. 
+            </p>
+        </article>
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Course Planning</th>
+                    </tr>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>Grade obtained</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PHP 101</td>
+                        <td>Introduction to the language and syntax</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>OOP in PHP</td>
+                        <td>How to do oriented object in PHP</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h2>Commentaires</h2>
+            <p>PHP appartient à la grande famille des descendants du C, dont la syntaxe est très proche. En particulier, sa syntaxe et sa construction ressemblent à celles des langages Java et Perl, à ceci près que du code PHP peut facilement être mélangé avec du code HTML au sein d'un fichier PHP. </p>
+            <p>L'utilisation de PHP en tant que générateur de pages Web dynamiques est la plus répandue, mais il peut aussi être utilisé comme langage de programmation ou de script en ligne de commande sans utiliser de serveur HTTP ni de navigateur. Il permet alors d'utiliser de nombreuses fonctions du langage C et plusieurs autres sans nécessiter de compilation à chaque changement du code source. </p>
+        </article>
+        <article>
+            <h2>Exemples</h2>
+            <ul>
+                <li>Equivalent au document.write en JavaScript</li>
+                <p>
+                    ?php echo 'Hello World'; echo 'Comment allez-vous ?'; echo 'Il fait beau non ?' ?><br>
+                </p>
+                <li>Conditions</li>
+                <p>
+                    ?php <br>
+                    <br>
+// la fonction strtolower renvoie en minuscules la chaîne de caractères passée en paramètre<br>
+$lang = strtolower($_POST['lang']);<br>
+<br>
+if ($lang === 'fr') {<br>
+    echo 'Vous parlez français !';<br>
+} elseif ($lang === 'en') {<br>
+    echo 'You speak English!';<br>
+} else {<br>
+    echo 'Je ne vois pas quelle est votre langue !';<br>
+}<br>
+                </p>
+                <li>code  HTML</li>
+                <p>
+                    ?php<br>
+
+$nom = 'Albert';<br>
+echo '<div>Bonjour ' . $nom . ' !</div>';
+                </p>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <address>
+            Nom : PUSSEY</br>
+            Prénom : Bastian</br>
+            Adresse : 3 Rue de la lawakbar</br>
+            Tél : <a href="tel:0606060606">0606060606</a>
+        </address>
+          
+    </footer>
+</body>
+</html>

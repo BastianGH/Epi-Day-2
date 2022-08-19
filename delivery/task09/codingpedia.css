@@ -1,0 +1,104 @@
+.box {
+    border: black  solid 2px;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+body {
+    background-color: grey;
+}
+.templateflex {
+    display: flex ;
+    flex-direction: row-reverse;
+}
+main {
+    flex-basis: 80%;
+}
+aside {
+    flex-basis: 17%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header nav {
+    width: 20%;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+header li {
+    flex-basis: 28%;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header li:hover{
+    background-color: #d6d6ff;
+}
+.moving_square{
+    background-color: red;
+    width:100px;
+    height:100px;
+    animation: 5s linear  turningaround 0s 5;
+}  
+@keyframes turningaround {
+    from {
+        top: 0px;
+    }
+    25% , 50% {
+        margin-left: 0px;
+        margin-top: 200px;
+        background-color: green;
+    }
+    50% , 75% {
+        margin-top: 200px;
+        margin-left: 200px;
+        background-color: blue;
+    }
+    75% , 100% {
+        margin-top: 0px;
+        margin-left: 200px;
+        background-color: yellow;
+    }
+    to {
+        margin-top: 0px;
+        margin-left: 0px;
+        background-color: red;
+    }
+}
+form {
+    width: 90%;
+    margin:0 auto;
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+form div input , .checking>div{
+    flex-basis: 60%;
+    margin: 0; 
+    padding: 0;   
+}
+.checking div {
+    justify-content: flex-start;
+}
+form textarea {
+    width:753px;
+}
+form>input {
+    margin-left:750px;
+    width:40%; 
+    padding:1%;
+}
+form :nth-child(10n){
+    height:50px;
+}

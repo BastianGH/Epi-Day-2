@@ -1,0 +1,29 @@
+.box {
+    border: black  solid 2px;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+body {
+    background-color: grey;
+}
+.templateflex {
+    display: flex;
+}
+main {
+    flex-basis: 80%;
+}
+aside {
+    flex-basis: 17%;
+}
+header {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+header h1 {
+    grid-row: 1;
+}
+header nav {
+    grid-row: 5;
+}
